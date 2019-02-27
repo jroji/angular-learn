@@ -121,6 +121,6 @@ import { Component, OnInit, Input } from '@angular/core';
       alert("Mensaje enviado");
   }
 ...
-``` 
+```
 
 Si abrimos la consola, podremos ver la información que arroja el evento que hemos escuchado.
