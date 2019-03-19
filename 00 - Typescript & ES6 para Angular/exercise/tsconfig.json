@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": false,
+        "module": "AMD",
+        "target": "ES5",
+        "outDir": "dist",
+        "rootDir": "src"
+    }
+}
