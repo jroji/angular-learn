@@ -69,7 +69,7 @@ interface User {
 
 De esta forma, una vez tengo definido el interfaz, a la hora de pasarle a este tarjeta-user un objeto, se validará en tiempo de construcción que el objeto enviado realmente contiene esos campos
 
-```
+```ts
 const user: User = {
     name: '...',
     imageSrc: '...',
@@ -81,7 +81,7 @@ tarjeta-user(myUser);
 
 De la misma manera que puedo definir campos obligatorios, también puedo definirlos opcionales mediante el uso del caracter ?
 
-```
+``` TS
 interface User {
     name: string;
     imageSrc: string;
