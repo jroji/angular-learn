@@ -1,0 +1,7 @@
+# Comunicación entre componentes
+
+Cuando trabajamos con librerías o frameworks orientados a componentes, se debe asumir que cada componente tiene una serie de propiedades y funciones internas, que no son accesibles desde un primer momento desde fuera de otros componentes. Cada vez que utilizamos la etiqueta de nuestro componente (\<app-root\>), ese componente se instancia, y declara esas propiedades que a partir de ese momento le pertenecen únicamente a sí mismo. Por esta razón podemos modificar valores de las distintas instancias de manera independiente.
+
+Una de los principales problemas o puntos de dolor que nos encontramos a la hora de trabajar es la comunicación entre esas propiedades. Estos cambios muchas veces deben transmitirse para presentarse en otro componente. Un buen ejemplo de esto es cuando en un ecommerce añadimos un producto a el carrito desde un componente "producto". Esta información se añade en ese componente, y se muestra en el "carrito".
+
+Una de las formas de lograr esta comunicación través de los mecanismos como Inputs y Outputs que veremos a continuación. Podemos transmitir información *hacia* un componente mediante el uso de **Inputs**, o podemos enviar el evento de click a través de un **Output** y transmitirlo a través de data binding a componentes que estemos utilizando. Pero esta no es la única manera de comunicar información entre componentes, como veremos en capítulos más adelante. De momento vamos a empezar con los inputs y outputs
